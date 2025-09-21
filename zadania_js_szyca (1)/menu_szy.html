@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Menu zadań - Szyca</title>
+  <script>
+    function WinOpen_zad(n) {
+      var files = {
+        1: "z1_szyc.html",
+        2: "zadanie2_szyc.html",
+        3: "zadanie3_szy.html",
+        4: "zaliczeniowa_szy.html",
+        5: "zadanie5_szy.html"
+      };
+      var f = files[n];
+      if(f) {
+        window.open(f,"okno_zad"+n,"toolbar=no,directories=no,menubar=no,height=600,width=800,top=100,left=" + (100 + 60*n));
+      }
+    }
+    function okno_zamknij() {
+      window.close();
+    }
+  </script>
+</head>
+<body>
+  <h2>Menu zadań 1-5 - Oliwier Szyca</h2>
+  <form>
+    <input type="button" value="Zadanie 1" onclick="WinOpen_zad(1)"><br><br>
+    <input type="button" value="Zadanie 2" onclick="WinOpen_zad(2)"><br><br>
+    <input type="button" value="Zadanie 3" onclick="WinOpen_zad(3)"><br><br>
+    <input type="button" value="Zadanie 4" onclick="WinOpen_zad(4)"><br><br>
+    <input type="button" value="Zadanie 5" onclick="WinOpen_zad(5)"><br><br>
+    <input type="button" value="Zamknij menu" onclick="okno_zamknij()">
+  </form>
+</body>
+</html>

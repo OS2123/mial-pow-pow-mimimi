@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Zadanie4 - teoria (Szyca)</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; }
+    b { display:block; margin-top:10px; }
+  </style>
+</head>
+<body>
+  <h2>Odpowiedzi teoretyczne - Oliwier Szyca</h2>
+  <b>1) Kiedy powstał JavaScript (podaj datę).</b>
+  <div>1995 (pierwotna implementacja w 1995 roku; w grudniu 1995 trafił do przeglądarki Navigator).</div>
+
+  <b>2) Dlaczego jest to język skryptowy</b>
+  <div>Bo jest interpretowany przez przeglądarkę w czasie wykonywania i nie wymaga kompilacji do kodu maszynowego.</div>
+
+  <b>3) Gdzie jest wykonywany JS (klient lub serwer)</b>
+  <div>Przede wszystkim po stronie klienta (w przeglądarce), ale również po stronie serwera (np. Node.js).</div>
+
+  <b>4) Dlaczego JS to bezpieczne narzędzie</b>
+  <div>Ma ograniczone uprawnienia dostępu do zasobów komputera w kontekście przeglądarki; operuje w piaskownicy (sandbox).</div>
+
+  <b>5) Czy jest to język obiektowy, jeśli tak to dlaczego.</b>
+  <div>Tak — używa obiektów, metod i zdarzeń, ma struktury danych i prototypowe dziedziczenie.</div>
+
+  <b>6) Wymień zalety JS</b>
+  <div>Zaleta1: prostota i niski próg wejścia.<br>
+      Zaleta2: duża popularność i dostępność bibliotek/frameworków.<br>
+      Zaleta3: możliwość tworzenia interaktywnych aplikacji bez przeładowania strony.</div>
+
+  <b>7) Framework to:</b>
+  <div>Biblioteka lub zbiór narzędzi ułatwiających tworzenie aplikacji (np. React, Angular).</div>
+
+  <b>8) Do aplikacji mobilnych można użyć Framework:</b>
+  <div>React Native, Ionic — pozwalają tworzyć aplikacje cross-platform w JS.</div>
+
+  <b>9) Aplikacje responsywne to:</b>
+  <div>Aplikacje, które dopasowują wygląd i układ do rozmiaru ekranu urządzenia.</div>
+
+  <b>10) Wyjaśnienie linijki:</b>
+  <div>&lt;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ') "&gt; — tworzy przycisk, a po kliknięciu wywołuje funkcję WinOpen()</div>
+
+  <b>11) Wyjaśnienie window.open(...)</b>
+  <div>window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+    — otwiera nowe okno (lub kartę) z podanym dokumentem; kolejne parametry ustawiają nazwę okna i opcje (toolbar, menubar) oraz rozmiar i pozycję.</div>
+  <ul>
+    <li>toolbar=no — ukrywa pasek narzędzi</li>
+    <li>directories=no — ukrywa katalogi (stare opcje)</li>
+    <li>menubar=no — ukrywa menu przeglądarki</li>
+    <li>height=280 — wysokość okna w pikselach</li>
+    <li>width=160 — szerokość okna</li>
+    <li>top=200 — pozycja od góry ekranu</li>
+    <li>left=200 — pozycja od lewej ekranu</li>
+  </ul>
+
+  <b>12) Opis window.close()</b>
+  <div>Funkcja zamyka aktualne okno przeglądarki otwarte przez skrypt (zwykle działa dla okien otwartych przez window.open).</div>
+
+  <br>
+  <input type="button" value="zamknij okno" onclick="window.close()">
+</body>
+</html>
